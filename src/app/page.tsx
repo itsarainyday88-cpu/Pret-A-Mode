@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useMotionValue, useSpring, useInView } from "framer-motion";
-import { ArrowRight, Layers, PenTool, Sparkles, Workflow } from "lucide-react";
+import { Layers, PenTool, Sparkles, Workflow } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import InquiryModal from "@/components/InquiryModal";
 import PhilosophyModal from "@/components/PhilosophyModal";
@@ -91,13 +91,9 @@ export default function Home() {
             나를 위해 완벽하게 준비된(Prêt-à) 트렌드(Mode). 복잡한 논리와 반복되는 노동은 시스템이 예술(Faire Clic)로 구현합니다.
             당신은 그저 선택하고 누리십시오.
           </p>
-          <div className="flex flex-col sm:flex-row items-center gap-4">
-            <button onClick={() => setIsModalOpen(true)}
-              className="px-8 py-4 bg-charcoal-grey text-white font-semibold rounded-full hover:bg-black transition-colors flex items-center gap-2 w-full sm:w-auto justify-center shadow-xl shadow-charcoal-grey/10">
-              맞춤 시스템 도입 문의 <ArrowRight className="w-4 h-4" />
-            </button>
+          <div className="flex justify-center mt-2 mb-16">
             <button onClick={() => setIsPhilosophyOpen(true)}
-              className="px-8 py-4 bg-transparent border border-charcoal-grey/20 text-charcoal-grey font-semibold rounded-full hover:bg-charcoal-grey/5 transition-colors w-full sm:w-auto justify-center">
+              className="px-10 py-4 bg-transparent border border-charcoal-grey/30 text-charcoal-grey font-semibold rounded-full hover:bg-charcoal-grey/5 hover:border-charcoal-grey/50 transition-all duration-300">
               철학 및 기능 살펴보기
             </button>
           </div>
