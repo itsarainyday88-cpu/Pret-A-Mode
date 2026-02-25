@@ -123,7 +123,7 @@ export default function Home() {
       </section>
 
       {/* 3. Philosophy & Core Features */}
-      <section className="py-32 px-6 max-w-7xl mx-auto w-full">
+      <section className="py-16 md:py-32 px-6 max-w-7xl mx-auto w-full">
         <div className="mb-24 text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-charcoal-grey">시대의 흐름을 이해하는 재단사</h2>
           <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed text-balance">
@@ -141,7 +141,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ delay: idx * 0.2, duration: 0.7, ease: "easeOut" }}
-              className="bg-white border border-sand-beige p-10 rounded-3xl hover:shadow-2xl hover:shadow-sand-beige/40 transition-all duration-500 group">
+              className="bg-white border border-sand-beige p-6 md:p-10 rounded-3xl hover:shadow-2xl hover:shadow-sand-beige/40 transition-all duration-500 group">
               <div className="bg-warm-white border border-sand-beige w-16 h-16 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
                 {feature.icon}
               </div>
@@ -153,7 +153,7 @@ export default function Home() {
       </section>
 
       {/* 4. 프로세스 타임라인 */}
-      <section className="py-24 px-6 max-w-4xl mx-auto w-full">
+      <section className="py-12 md:py-24 px-6 max-w-4xl mx-auto w-full">
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }} transition={{ duration: 0.7, ease: "easeOut" as const }}
           className="text-center mb-16">
@@ -217,7 +217,7 @@ export default function Home() {
       </section>
 
       {/* 6. Value Proposition (ROI) */}
-      <section className="py-32 px-6 w-full mt-0 relative overflow-hidden">
+      <section className="py-16 md:py-32 px-6 w-full mt-0 relative overflow-hidden">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-20 relative z-10">
           <div className="flex-1 lg:pr-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-8 font-pretendard leading-[1.2] text-charcoal-grey">
@@ -246,8 +246,8 @@ export default function Home() {
       <FAQ />
 
       {/* 8. Footer CTA */}
-      <footer className="py-32 px-6 max-w-4xl mx-auto text-center w-full">
-        <h2 className="text-4xl md:text-5xl font-bold mb-8 text-charcoal-grey">당신의 비즈니스 핏을 완성하십시오</h2>
+      <footer className="py-16 md:py-32 px-6 max-w-4xl mx-auto text-center w-full">
+        <h2 className="text-2xl md:text-5xl font-bold mb-8 text-charcoal-grey whitespace-nowrap">당신의 비즈니스 핏을 완성하십시오</h2>
         <p className="text-gray-600 mb-14 text-lg font-light leading-relaxed">
           마케팅 시스템을 입는 것만으로도 앞서가는 곳, 프레아모드입니다. <br className="hidden sm:block" />
           간단한 인터뷰 일정을 통해 귀사만의 오트쿠튀르 설계를 시작하겠습니다.
