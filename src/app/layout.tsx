@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -7,6 +8,13 @@ const playfair = Playfair_Display({
   variable: "--font-serif",
   display: "swap",
   style: ["normal", "italic"],
+});
+
+const pretendard = localFont({
+  src: "./fonts/PretendardVariable.woff2",
+  variable: "--font-pretendard",
+  display: "swap",
+  weight: "100 900",
 });
 
 export const metadata: Metadata = {
@@ -21,14 +29,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" className="scroll-smooth">
-      <head>
-        <link rel="stylesheet" as="style" crossOrigin="" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-      </head>
       <body
-        className={`${playfair.variable} antialiased font-sans text-charcoal-grey selection:bg-gold-accent selection:text-white`}
+        className={`${playfair.variable} ${pretendard.variable} antialiased font-sans text-charcoal-grey selection:bg-gold-accent selection:text-white`}
         style={{
-          backgroundColor: "#faf9f6", /* var(--color-warm-white) fallback */
-          fontFamily: "'Pretendard', ui-sans-serif, system-ui, sans-serif"
+          backgroundColor: "#faf9f6",
+          fontFamily: "var(--font-pretendard), ui-sans-serif, system-ui, sans-serif",
         }}
       >
         <main className="min-h-screen flex flex-col relative w-full items-center">
