@@ -70,7 +70,7 @@ export default function PhilosophyModal({ isOpen, onClose }: PhilosophyModalProp
                         exit={{ opacity: 0, y: 40 }}
                         transition={{ duration: 0.45, ease: "easeOut" as const }}
                     >
-                        <div className="bg-white/96 backdrop-blur-xl w-full max-w-2xl rounded-3xl shadow-2xl shadow-charcoal-grey/10 border border-sand-beige/60 relative pointer-events-auto overflow-hidden">
+                        <div className="bg-white/96 backdrop-blur-xl w-full max-w-2xl rounded-3xl shadow-2xl shadow-charcoal-grey/10 border border-sand-beige/60 relative pointer-events-auto overflow-hidden max-h-[90vh] flex flex-col">
                             {/* Close */}
                             <button
                                 onClick={onClose}
@@ -81,14 +81,14 @@ export default function PhilosophyModal({ isOpen, onClose }: PhilosophyModalProp
                             </button>
 
                             {/* 탭 헤더 */}
-                            <div className="flex border-b border-sand-beige/60 px-10 pt-10">
+                            <div className="flex border-b border-sand-beige/60 px-6 md:px-10 pt-8 md:pt-10 flex-shrink-0">
                                 {TABS.map((tab, i) => (
                                     <button
                                         key={tab.id}
                                         onClick={() => setActiveTab(i)}
                                         className="relative mr-8 pb-4 text-left group"
                                     >
-                                        <span className={`text-xs tracking-[0.25em] uppercase font-semibold transition-colors duration-200 ${activeTab === i ? "text-gold-accent" : "text-gray-400 group-hover:text-charcoal-grey"
+                                        <span className={`text-[10px] md:text-xs tracking-[0.2em] md:tracking-[0.25em] uppercase font-semibold transition-colors duration-200 ${activeTab === i ? "text-gold-accent" : "text-gray-400 group-hover:text-charcoal-grey"
                                             }`}>
                                             {tab.labelKo}
                                         </span>
@@ -115,7 +115,7 @@ export default function PhilosophyModal({ isOpen, onClose }: PhilosophyModalProp
                                     animate={{ opacity: 1, y: 0 }}
                                     exit={{ opacity: 0, y: -8 }}
                                     transition={{ duration: 0.3, ease: "easeOut" as const }}
-                                    className="px-10 py-8"
+                                    className="px-6 md:px-10 py-6 md:py-8 overflow-y-auto"
                                 >
                                     <h2 className="text-3xl md:text-4xl font-bold text-charcoal-grey leading-snug mb-4">
                                         {TABS[activeTab].headline}

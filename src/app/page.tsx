@@ -84,8 +84,7 @@ export default function Home() {
           </h1>
 
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mb-12 font-light leading-relaxed">
-            나를 위해 완벽하게 준비된(Prêt-à) 트렌드(Mode). <br />
-            복잡한 논리와 반복되는 노동은 시스템이 예술(Faire Clic)로 구현합니다.
+            나를 위해 완벽하게 준비된(Prêt-à) 트렌드(Mode). 복잡한 논리와 반복되는 노동은 시스템이 예술(Faire Clic)로 구현합니다.
             당신은 그저 선택하고 누리십시오.
           </p>
 
@@ -108,10 +107,9 @@ export default function Home() {
       <section className="py-32 px-6 max-w-7xl mx-auto w-full">
         <div className="mb-24 text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-charcoal-grey">시대의 흐름을 이해하는 재단사</h2>
-          <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
+          <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed text-balance">
             가장 좋은 옷은 입는 사람의 체형을 이해하듯, 최고의 마케팅은 브랜드의 숨결을 이해합니다.
-            단순 매크로가 아닙니다. 대표님의 문체와 철학을 딥러닝하여, 지금 이 순간의 트렌드를
-            가장 완벽한 형태의 콘텐츠로 재단합니다.
+            단순 매크로가 아닙니다. 대표님의 문체와 철학을 딥러닝하여, 지금 이 순간의 트렌드를 가장 완벽한 형태의 콘텐츠로 재단합니다.
           </p>
         </div>
 

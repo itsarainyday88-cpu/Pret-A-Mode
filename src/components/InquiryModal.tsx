@@ -113,7 +113,7 @@ export default function InquiryModal({ isOpen, onClose }: InquiryModalProps) {
             exit={{ opacity: 0, y: 40 }}
             transition={{ duration: 0.45, ease: "easeOut" }}
           >
-            <div className="bg-white/95 backdrop-blur-xl w-full max-w-lg rounded-3xl shadow-2xl shadow-charcoal-grey/15 border border-sand-beige/60 p-10 relative pointer-events-auto overflow-hidden">
+            <div className="bg-white/95 backdrop-blur-xl w-full max-w-lg rounded-3xl shadow-2xl shadow-charcoal-grey/15 border border-sand-beige/60 p-6 md:p-10 relative pointer-events-auto overflow-hidden">
               <button
                 onClick={onClose}
                 className="absolute top-6 right-6 text-gray-400 hover:text-charcoal-grey transition-colors"
