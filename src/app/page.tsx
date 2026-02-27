@@ -88,8 +88,8 @@ export default function Home() {
             대중화를 선언하다
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mb-12 font-light leading-relaxed">
-            나를 위해 완벽하게 준비된(Prêt-à) 트렌드(Mode). 복잡한 논리와 반복되는 노동은 시스템이 예술(Faire Clic)로 구현합니다.
-            당신은 그저 선택하고 누리십시오.
+            대표님의 문체를 AI가 학습합니다. 반복되는 노동은 시스템이 맡고,<br className="hidden md:block" />
+            대표님은 최종 검수만 하십시오.
           </p>
           <div className="flex justify-center mt-2 mb-16">
             <button onClick={() => setIsPhilosophyOpen(true)}
