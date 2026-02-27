@@ -19,7 +19,30 @@ const pretendard = localFont({
 
 export const metadata: Metadata = {
   title: "Pret-A-Mode | 입히는 순간 성과가 되는 AI 마케팅 솔루션",
-  description: "AI 마케팅 엔진 Faire Clic으로 당신의 비즈니스에 클릭을 만드세요.",
+  description: "대표님의 문체를 AI가 학습합니다. 반복되는 노동은 시스템이 맡고, 대표님은 최종 검수만 하십시오.",
+  metadataBase: new URL("https://pret-a-mode.vercel.app"),
+  openGraph: {
+    title: "Pret-A-Mode | 마케팅 오트쿠튀르의 대중화를 선언하다",
+    description: "대표님의 문체를 AI가 학습합니다. 반복되는 노동은 시스템이 맡고, 대표님은 최종 검수만 하십시오.",
+    url: "https://pret-a-mode.vercel.app",
+    siteName: "Pret-A-Mode",
+    images: [
+      {
+        url: "/logo.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Pret-A-Mode 로고",
+      },
+    ],
+    locale: "ko_KR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pret-A-Mode | 마케팅 오트쿠튀르의 대중화를 선언하다",
+    description: "대표님의 문체를 AI가 학습합니다. 반복되는 노동은 시스템이 맡고, 대표님은 최종 검수만 하십시오.",
+    images: ["/logo.jpg"],
+  },
 };
 
 export default function RootLayout({
