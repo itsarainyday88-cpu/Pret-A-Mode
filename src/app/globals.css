@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sand-beige: #f4f1ea;
+  --color-charcoal-grey: #2d2d2d;
+  --color-warm-white: #faf9f6;
+  --color-pure-white: #ffffff;
+  --color-gold-accent: #c4a77d;
+  --font-sans: var(--font-pretendard), ui-sans-serif, system-ui;
+  --font-serif: var(--font-serif), ui-serif, Georgia;
+}
+
+@layer base {
+  :root {
+    --background: var(--color-warm-white);
+    --foreground: var(--color-charcoal-grey);
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--color-gold-accent);
+  color: var(--color-pure-white);
+}
